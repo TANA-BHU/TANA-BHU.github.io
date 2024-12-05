@@ -3,25 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name's Portfolio</title>
+    <title>John Doe's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my personal portfolio!</p>
+        <div class="container">
+            <h1 class="name">John Doe</h1>
+            <p class="role">Web Developer | Designer | Problem Solver</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </header>
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Development</li>
-            <li>Data Analysis</li>
-            <li>Machine Learning</li>
-            <li>UI/UX Design</li>
-        </ul>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Design</h3>
+                    <p>UI/UX Design, Figma, Adobe XD</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Analysis</h3>
+                    <p>Python, SQL, Data Visualization</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A data visualization dashboard using Python and D3.js.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>UI/UX design for a mobile app prototype in Figma.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>Contact me: your.email@example.com</p>
+        <p>© 2024 John Doe</p>
     </footer>
 </body>
-</html> 
+</html>
